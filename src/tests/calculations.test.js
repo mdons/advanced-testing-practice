@@ -1,5 +1,7 @@
 import {add, subtract, multiply,divide} from "../services/calculations";
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(add(1, 2)).toBe(3);
+describe("add", () => {
+  it("should add 1 and 2 and return 3", () => {
+    expect(add(1, 2)).toBe(3);
+  });
 });

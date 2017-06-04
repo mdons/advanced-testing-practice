@@ -1,5 +1,5 @@
 import React from 'react';
-import {connect} from "react-redux"
+
 function SpecialText(props) {
   return (
       <div>
@@ -7,9 +7,5 @@ function SpecialText(props) {
       </div>
   );
 }
-function mapStateToProps(state){
-  return {
-    text:state.specialText
-  }
-}
-export default connect(mapStateToProps)(SpecialText);
+
+export default (SpecialText);

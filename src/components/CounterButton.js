@@ -1,6 +1,4 @@
 import React from 'react';
-import {connect} from "react-redux";
-import {increaseCounter,decreaseCounter} from "../actions";
 
 function CounterButton(props) {
   return (
@@ -22,16 +20,5 @@ function CounterButton(props) {
       </div>
   );
 }
-function mapDispatchToProps(dispatch){
-  return {
-    increase:function(){
-      let action = increaseCounter();
-      dispatch(action);
-    },
-    decrease:function(){
-      let action = decreaseCounter();
-      dispatch(action);
-    }
-  }
-}
-export default connect(null,mapDispatchToProps)(CounterButton);
+
+export default (CounterButton);

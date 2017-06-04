@@ -11,17 +11,19 @@ function findBarney(name){
   return name === "Barney";
 }
 
-test("map works to prepend Hello to each name", () => {
-  expect(map(names,addHello)).toEqual([
-    "Hello Jon",
-    "Hello Bob",
-    "Hello Ted",
-    "Hello Barney",
-    "Hello Lilly",
-    "Hello Robin",
-    "Hello Saul",
-    "Hello Axe"
-  ]);
+describe("map", () => {
+  it("should prepend Hello to each name", () => {
+    expect(map(names,addHello)).toEqual([
+      "Hello Jon",
+      "Hello Bob",
+      "Hello Ted",
+      "Hello Barney",
+      "Hello Lilly",
+      "Hello Robin",
+      "Hello Saul",
+      "Hello Axe"
+    ]);
+  });
 });
 
 //filter works to find string with length 3

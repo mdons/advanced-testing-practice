@@ -1,5 +1,4 @@
 import React from 'react';
-import {connect} from "react-redux";
 
 function VideoPlayer(props) {
   let width = 200;
@@ -15,10 +14,5 @@ function VideoPlayer(props) {
   );
 }
 
-function mapStateToProps(state){
-  return {
-    URL:state.videoURL,
-    scale:state.videoScale
-  }
-}
-export default connect(mapStateToProps)(VideoPlayer);
+
+export default (VideoPlayer);

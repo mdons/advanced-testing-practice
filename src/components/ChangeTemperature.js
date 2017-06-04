@@ -1,6 +1,4 @@
 import React from "react";
-import {connect} from "react-redux";
-import {setTemp} from "../actions";
 
 function ChangeTemperature(props){
     return(
@@ -16,12 +14,4 @@ function ChangeTemperature(props){
     )
 }
 
-function mapDispatchToProps(dispatch){
-  return {
-    set:function(temp){
-      let action = setTemp(temp);
-      dispatch(action);
-    }
-  }
-}
-export default connect(null,mapDispatchToProps)(ChangeTemperature);
+export default (ChangeTemperature);

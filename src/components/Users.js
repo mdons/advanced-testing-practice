@@ -1,5 +1,4 @@
 import React from 'react';
-import {connect} from "react-redux";
 
 function Users(props) {
   var usersDivs = null;
@@ -23,11 +22,5 @@ function Users(props) {
       </div>
   );
 }
-function mapStateToProps(state){
-  return {
-    users:state.users,
-    sortOn:state.currentUserSort,
-    firstNameFilter: state.searchText
-  };
-}
-export default connect(mapStateToProps)(Users);
+
+export default (Users);

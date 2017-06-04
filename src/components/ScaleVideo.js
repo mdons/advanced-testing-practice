@@ -1,6 +1,4 @@
 import React from 'react';
-import {connect} from "react-redux";
-import {setVideoScale} from "../actions";
 
 
 function ScaleVideo(props) {
@@ -18,12 +16,5 @@ function ScaleVideo(props) {
       </div>
   );
 }
-function mapDispatchToProps(dispatch){
-  return {
-    set:function(scale){
-      let action = setVideoScale(scale);
-      dispatch(action);
-    }
-  }
-}
-export default connect(null,mapDispatchToProps)(ScaleVideo);
+
+export default (ScaleVideo);
