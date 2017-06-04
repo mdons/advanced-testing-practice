@@ -1,12 +1,12 @@
-import React from 'react';
-import {mount } from 'enzyme';
-import ReactDOM from 'react-dom';
+import React from "react";
+import {mount } from "enzyme";
+import ReactDOM from "react-dom";
 import {Provider} from "react-redux";
 import store from "../../store";
 import CounterContainer from "./";
 
-describe('Counter Dispaly', () => {
-  it('Shows the currentCount', () => {
+describe("Counter Display", () => {
+  it("Shows the currentCount", () => {
     const wrapper = mount(<Provider store={store}><CounterContainer /></Provider>);
     
     store.dispatch({

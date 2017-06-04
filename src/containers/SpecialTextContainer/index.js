@@ -1,6 +1,6 @@
 
 import { connect } from "react-redux";
-import SpecialText from "../components/SpecialText"
+import SpecialText from "../../components/SpecialText"
 
 function mapStateToProps(state){
   return{
