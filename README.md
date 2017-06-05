@@ -53,7 +53,7 @@ how do you bring 2 components together?
 * use the store to dispatch a “ADD_USER” action with the value of a user object
 * `expect(wrapper.find(“li”)).to.have.length(8);`
 
-### Hopefully at this point you can see there is a pattern to making the tests
+### Hopefully at this point we can see there is a pattern to making the tests
 
 ### ChangeTemperatureContainer.js
 * Create a test file for this container to ensure that when the text box changes, the state currentTemp changes 
