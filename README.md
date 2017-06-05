@@ -15,9 +15,7 @@ how do you bring 2 components together?
 * Implement the code for the functions as described in the comments
 
 ### Add Calculation Tests
-* subtracts 4 from 5 to equal 1
-* multiply 4 by 5 to equal 20
-* device 100 by 4 to equal 25
+* Implement calculation tests that make sense
 
 ### Add Function Tests
 * Implement the tests as described in the comments

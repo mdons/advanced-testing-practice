@@ -1,4 +1,4 @@
-import {map,filter,find,findLast} from "../services/functions";
+import {map,filter,find,findLast} from "../services/array-functions";
 const names = ["Jon","Bob","Ted","Barney","Lilly","Robin","Saul","Axe"];
 const myNumbers = [4,3,55,22,99,1913,7,5,4,2,1];
 
@@ -11,7 +11,7 @@ function findThree(name){
 function findBarney(name){
   return name === "Barney";
 }
-//head works to find the first element in the array "Jon"
+//head should find the first element in the array "Jon"
 describe("head", () => {
   it("should return the first element of an array 'Jon'", () => {
     expect(head(names)).toEqual("Jon");
