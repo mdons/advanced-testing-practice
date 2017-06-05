@@ -13,7 +13,7 @@ beforeEach(() => {
   store.getState().currentCount = 0;
 });
 
-describe("Counter buttons", () => {
+describe("CounterButtonContainer", () => {
   it("Increase button increases the currentCount to 4", () => {
     var increaseButton = wrapper.find("button").at(0);
     increaseButton.simulate("click");

@@ -8,7 +8,7 @@ let wrapper = null;
 beforeAll(()=>{
   wrapper = mount(<Provider store={store}><SpecialTextBoxContainer /></Provider>);
 })
-describe("Special Text Box", () => {
+describe("SpecialTextBoxContainer", () => {
   it("changes specialText to 'hello'", () => {
     var textBox = wrapper.find("input").at(0);
     textBox.simulate('change', {target: {value: "hello"}});

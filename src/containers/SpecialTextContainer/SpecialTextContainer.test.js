@@ -5,8 +5,8 @@ import {Provider} from "react-redux";
 import store from "../../store";
 import SpecialTextContainer from "./";
 
-describe("Special Text Dispaly", () => {
-  it("Shows specialText state", () => {
+describe("SpecialTextContainer", () => {
+  it("shows specialText state", () => {
     const wrapper = mount(<Provider store={store}><SpecialTextContainer /></Provider>);
     
     store.dispatch({

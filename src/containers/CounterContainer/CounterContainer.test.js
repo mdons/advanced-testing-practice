@@ -5,8 +5,8 @@ import {Provider} from "react-redux";
 import store from "../../store";
 import CounterContainer from "./";
 
-describe("Counter Display", () => {
-  it("Shows the currentCount", () => {
+describe("CounterCountainer", () => {
+  it("shows the currentCount", () => {
     const wrapper = mount(<Provider store={store}><CounterContainer /></Provider>);
     
     store.dispatch({

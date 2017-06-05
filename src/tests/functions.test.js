@@ -1,5 +1,6 @@
 import {map,filter,find,findLast} from "../services/functions";
 const names = ["Jon","Bob","Ted","Barney","Lilly","Robin","Saul","Axe"];
+const myNumbers = [4,3,55,22,99,1913,7,5,4,2,1];
 
 function addHello(name){
   return "Hello " + name;
@@ -10,6 +11,13 @@ function findThree(name){
 function findBarney(name){
   return name === "Barney";
 }
+//head works to find the first element in the array "Jon"
+describe("head", () => {
+  it("should return the first element of an array 'Jon'", () => {
+    expect(head(names)).toEqual("Jon");
+  });
+});
+
 
 describe("map", () => {
   it("should prepend Hello to each name", () => {
@@ -26,10 +34,24 @@ describe("map", () => {
   });
 });
 
-//filter works to find string with length 3
+describe("sort", () => {
+  it("should return an array with numbers in order", () => {
+    expect(sort(myNumbers)).toEqual([
+      1,2,3,4,5,7,22,55,99,1913
+    ]);
+  });
+});
 
-//find works to find string equal to "Barney"
+//filter should return an array with names of length 3
+//["Jon","Bob","Ted","Axe"]
 
-//findLast works to find the value "Axe"
+//find should find one name of "Barney"
+
+//findLast should find the last name of "Axe"
+
+//reverse should return an array with the elements in the opposite order
+//["Axe","Saul","Robin","Lilly","Barney","Ted","Bob","Jon"]
+//tail should return all elements in an array except the first one
+//[Bob","Ted","Barney","Lilly","Robin","Saul","Axe"];
 
 
