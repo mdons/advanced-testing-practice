@@ -1,12 +1,4 @@
-Testing Practice
-
-create folders for the containers
-containers need to be tested with redux and store because that is the only point of a container
-
-test components?? -  NO
-the only thing you would test in a component is internal state, hide/show, 
-how do you bring 2 components together?
-
+# Testing Practice
 
 ### Calculations
 * Implement the calculation functions
@@ -15,7 +7,9 @@ how do you bring 2 components together?
 * Implement the code for the functions as described in the comments
 
 ### Add Calculation Tests
-* Implement calculation tests that make sense
+* subtracts 4 from 5 to equal 1
+* multiply 4 by 5 to equal 20
+* device 100 by 4 to equal 25
 
 ### Add Function Tests
 * Implement the tests as described in the comments
@@ -51,7 +45,7 @@ how do you bring 2 components together?
 * use the store to dispatch a “ADD_USER” action with the value of a user object
 * `expect(wrapper.find(“li”)).to.have.length(8);`
 
-### Hopefully at this point we can see there is a pattern to making the tests
+### Hopefully at this point you can see there is a pattern to making the tests
 
 ### ChangeTemperatureContainer.js
 * Create a test file for this container to ensure that when the text box changes, the state currentTemp changes 
@@ -61,5 +55,6 @@ how do you bring 2 components together?
 
 ### CurrentCityContainer.js
 * Create a test file to ensure that when the state currentCity is change, the text of the div changes to “CurrentCity: whatever city”
+
 
 
