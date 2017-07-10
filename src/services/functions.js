@@ -1,6 +1,6 @@
 /*
   creates a function that invokes theFunc once it's called n or more times
-  create a variable to be a counter
+  in the after function, create a variable to be a counter
   create a new function called theAfter in the after function
   when theAfter is called increment the counter
   if counter === times, call theFunc()

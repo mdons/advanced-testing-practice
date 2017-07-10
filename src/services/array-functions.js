@@ -1,7 +1,7 @@
 
-//create a new array
+//in the function map, create a new array and store in a variable
 //loop theArray and call the fnc for each thing in the array, 
-//     passing in the item from the current loop
+//     passing in the item from the current loop into the call to fnc
 //add the returned value from fnc to the new array
 //return the new array
 export function map(theArray, fnc){
@@ -46,8 +46,8 @@ export function reverse(theArray){
 }
 
 //create a new array
-//loop theArray in reverse order
-//add the item from each loop to the new array
+//loop theArray
+//add the item from each loop to the new array except the first item
 //return the new array
 export function tail(theArray){
 
