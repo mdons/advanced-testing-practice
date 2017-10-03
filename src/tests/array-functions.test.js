@@ -37,7 +37,7 @@ describe("map", () => {
 describe("sort", () => {
   it("should return an array with numbers in order", () => {
     expect(sort(myNumbers)).toEqual([
-      1,2,3,4,5,7,22,55,99,1913
+      1,2,3,4,4,5,7,22,55,99,1913
     ]);
   });
 });
