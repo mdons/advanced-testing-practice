@@ -1,9 +1,11 @@
 
-//in the function map, create a new array and store in a variable
-//loop theArray and call the fnc for each thing in the array, 
-//     passing in the item from the current loop into the call to fnc
+//you have been told to build a function called map. Follow these instructions to do so.
+//on the first line, create a new empty array and store in a variable named whatever you want (myNewArray)
+//loop theArray and extract the single item from the array per loop and store it in a variable
+//on each loop call fnc() passing in the item from the current loop into the call to fnc
+//fnc is a function that must return something, capture whatever it returns in a variable
 //add the returned value from fnc to the new array
-//return the new array
+//after looping, return the new array
 export function map(theArray, fnc){
 
 }
