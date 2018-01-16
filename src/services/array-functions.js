@@ -1,5 +1,6 @@
 
-//you have been told to build a function called map. Follow these instructions to do so.
+//Your boss has told you to build a function called map. Follow these instructions to do so.
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 //on the first line, create a new empty array and store in a variable named whatever you want (myNewArray)
 //loop theArray and extract the single item from the array per loop and store it in a variable
 //on each loop call fnc() passing in the item from the current loop into the call to fnc
