@@ -6,8 +6,15 @@
   if counter === times, call theFunc()
   return the theAfter 
  */
-export function after(times, theFunc){
-
+export function after(times, theFunc) {
+  let counter = 0;
+  const theAfter = () => {
+    counter++;
+    if (counter === times) {
+      theFunc();
+    }
+  };
+  return theAfter;
 }
 
 /*
@@ -18,8 +25,15 @@ export function after(times, theFunc){
   if counter <= times, call theFunc()
   return the theBefore 
  */
-export function before(times, theFunc){
-
+export function before(times, theFunc) {
+  let counter = 0;
+  const theBefore = () => {
+    counter++;
+    if (counter <= times) {
+      theFunc();
+    }
+  };
+  return theBefore;
 }
 
 /*
@@ -32,6 +46,13 @@ in theOnce check if firstValue is null,
 return firstValue
 return theOnce
  */
-export function once(theFunc){
-  
+export function once(theFunc) {
+  let firstValue = null;
+  const theOnce = () => {
+    if (!firstValue) {
+      firstValue = theFunc();
+    }
+    return firstValue;
+  };
+  return theOnce;
 }
