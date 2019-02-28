@@ -1,4 +1,3 @@
-
 //Your boss has told you to build a function called map. Follow these instructions to do so.
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 //on the first line, create a new empty array and store in a variable named whatever you want (myNewArray)
@@ -7,54 +6,48 @@
 //fnc is a function that must return something, capture whatever it returns in a variable
 //add the returned value from fnc to the new array
 //after looping, return the new array
-export function map(theArray, fnc){
-
+export function map(theArray, fnc) {
+  let myNewArray = [];
+  let fncReturn = null;
+  theArray.forEach(element => {
+    fncReturn = fnc(element);
+    myNewArray.push(fncReturn);
+  });
+  return myNewArray;
 }
 
 //create a new array
-//loop theArray and call the fnc for each thing in the array, 
+//loop theArray and call the fnc for each thing in the array,
 //     passing in the item from the current loop
 //fnc will return true or false, if true add the item to the new array else do not
 //return the new array
-export function filter(theArray, fnc){
+export function filter(theArray, fnc) {}
 
-}
-
-
-//loop theArray and call the fnc for each thing in the array, 
+//loop theArray and call the fnc for each thing in the array,
 //     passing in the item from the current loop
-//fnc will return true or false, if true return the item 
+//fnc will return true or false, if true return the item
 //return null
-export function find(theArray, fnc){
-
-}
-
+export function find(theArray, fnc) {}
 
 //return the last item in theArray
-export function findLast(theArray){
-
-}
+export function findLast(theArray) {}
 
 //return the first element of the array
-export function head(theArray){
-
+export function head(theArray) {
+  return theArray[0];
 }
 
 //create a new array
 //loop theArray in reverse order
 //add the item from each loop to the new array
 //return the new array
-export function reverse(theArray){
-
-}
+export function reverse(theArray) {}
 
 //create a new array
 //loop theArray
 //add the item from each loop to the new array except the first item
 //return the new array
-export function tail(theArray){
-
-}
+export function tail(theArray) {}
 
 //implement the most basic sorting algorithm there is
 //assume the array will always have numbers
@@ -66,6 +59,18 @@ export function tail(theArray){
 //if a swap is done set it to true
 //after each for loop check the variable, if true, continue the while loop
 //if false return theArray
-export function sort(theArray){
-
+export function sort(theArray) {
+  let sorted;
+  do {
+    sorted = false;
+    for (let i = 0; i < theArray.length - 1; i++) {
+      if (theArray[i] > theArray[i + 1]) {
+        let temp = theArray[i];
+        theArray[i] = theArray[i + 1];
+        theArray[i + 1] = temp;
+        sorted = true;
+      }
+    }
+  } while (sorted);
+  return theArray;
 }
