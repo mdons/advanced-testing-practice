@@ -36,8 +36,8 @@ describe("before", () => {
 describe("once", () => {
   it("should only call add once", () => {
     const myOnce = once(add);
-    // console.log(myOnce.call(null, 4, 5));
-    // console.log(myOnce.call(null, 10, 20));
-    expect(true).toBe(false);
+    const firstResult = myOnce(4, 5);
+    const secondResult = myOnce(10, 20);
+    expect(secondResult).toBe(9);
   });
 });
