@@ -14,17 +14,21 @@ beforeAll(() => {
   );
 });
 
+beforeEach(() => {});
+
 describe("Add User Button", () => {
   it("should increase users array length by 1", () => {
     var increaseButton = wrapper.find("button").at(0);
+    let userLength = store.getState().users.length;
     increaseButton.simulate("click");
-    console.log(store.getState().users.length);
-    // expect(store.getState()).toBe();
+    // console.log(store.getState().users.length);
+    expect(store.getState().users.length).toBe(userLength + 1);
   });
   it("should decrease users array length by 1", () => {
     var decreaseButton = wrapper.find("button").at(1);
+    let userLength = store.getState().users.length;
     decreaseButton.simulate("click");
-    console.log(store.getState().users.length);
-    // expect(store.getState().currentCount).toBe();
+    // console.log(store.getState().users.length);
+    expect(store.getState().users.length).toBe(userLength - 1);
   });
 });
